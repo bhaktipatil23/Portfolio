@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo" id="home-logo">
+          <a href="#">P <span>ort</span>f<span>olio</span></a>
+      </div>
+        
+      </div>
+    </nav>
+    <div id="header">
+      <div class="container">
+        <nav>
+        <!-- Menu icon to open the side menu -->
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+
+        <!-- Side menu (initially hidden) -->
+        <ul id="sidemenu">
+            <!-- Close icon inside the menu -->
+            <i class="fa-solid fa-square-xmark" onclick="closeMenu()"></i>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+        <!-- Home -->
+        <div class="hearder-text">
+          <p>Data Explorer and Analytics Enthusiast</p>
+          <h1>Hi, I'm <span>Bhakti</span> Patil</h1>
+          <a href="#projects" id="explore-link">Explore My Work</a>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/bhakti1.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A Pre-Final year Computer Science and Engineering (Data Science
+              specialization) student with a deep interest in Machine Learning,
+              Data Analysis, and Web Development. Over the course of my
+              academics, I have gained hands-on experience in programming
+              languages like Python and Java, as well as web technologies
+              including HTML, CSS, and JavaScript. I am eager to apply these
+              skills to real-world scenarios, working on innovative projects
+              that solve practical challenges while enhancing my technical
+              expertise.
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab(event, 'skills')"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'Education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />Java | C | Python |
+                  HTML | CSS | JavaScript
+                </li>
+                <li><span>Frameworks</span><br />Flask | TensorFlow</li>
+                <li>
+                  <span>Concepts</span><br />Data Structures & Algorithms (DSA)
+                  | Natural Language Processing | OOP | Machine Learning | EDA
+                </li>
+                <li>
+                  <span>Technologies</span><br />Power BI | Tableau | Canva
+                </li>
+                <li><span>Database</span><br />PostgreSQL</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span
+                    >Intelligent Automation Virtual Internship by AICTE (Sep’23
+                    - Nov’23)</span
+                  ><br />
+                  Gained hands-on experience in developing automation solutions
+                  using AI and machine learning algorithms.<br />
+                  Automated repetitive business processes, improving operational
+                  efficiency and reducing manual effort.<br />
+                  Applied intelligent process automation techniques to
+                  real-world scenarios, enhancing workflow optimization.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span
+                    >Bachelor of Technology | Computer Science & Engineering
+                    (Data Science)</span
+                  ><br />
+                  KIT’s College of Engineering, Kolhapur (Autonomous)<br />
+                  CGPA: 8.7 | 2022 - 2026
+                </li>
+                <li>
+                  <span>Higher Secondary Certificate</span><br />
+                  Chate Junior College of Science, Kolhapur<br />
+                  Percentage: 89.17% | 2020 - 2022
+                </li>
+                <li>
+                  <span>Secondary School Certificate</span><br />
+                  Shraddha Modern School, Kagal<br />
+                  Percentage: 94.80% | 2019 - 2020
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+          <div class="work">
+            <img
+              src="Images/work-1.png"
+              alt="AI-Based Response for Malware Observation and Recognition"
+            />
+            <div class="layer">
+              <h3>AI-Based Response for Malware Observation and Recognition</h3>
+              <p>
+                Developed machine learning models to detect and classify
+                Portable Executable (PE) files & URLs as benign, malicious,
+                phishing, or undetected using real-world datasets.
+              </p>
+              <a
+                href="https://your-huffman-project-link.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Huffman Coding project"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-2.png" alt="Huffman Coding System" />
+            <div class="layer">
+              <h3>Huffman Coding System</h3>
+              <p>
+                Designed a Huffman tree to create variable-length codes for
+                lossless compression, reducing file size while preserving data
+                integrity.
+              </p>
+              <a
+                href="https://your-huffman-project-link.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Huffman Coding project"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="Images/work-3.png"
+              alt="Sentix Spectrum - Sentiment Analysis"
+            />
+            <div class="layer">
+              <h3>Sentix Spectrum</h3>
+              <p>
+                Implemented machine learning models to classify text data into
+                positive, negative, or neutral sentiments using real-world
+                datasets.
+              </p>
+              <a
+                href="https://your-sentix-spectrum-link.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Sentix Spectrum project"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+<!-- Project Overview Section -->
+<div class="project-overview">
+    
+  
+    <!-- Single Button to Toggle All Projects -->
+    <button class="btn" onclick="toggleOverview()">Show More</button>
+  
+    <!-- Hidden Overview Content (Initially Hidden) -->
+    <div id="more-overview" class="more-overview" style="display: none;">
+  
+      <!-- Project 1: AI-Based Response for Malware Observation and Recognition -->
+      <h2>AI-Based Response for Malware Observation and Recognition</h2>
+      <h3>Overview</h3>
+      <p>
+        Developed machine learning models to detect and classify Portable Executable (PE) files and URLs as benign, malicious, phishing, or undetected using real-world datasets.
+      </p>
+  
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>High Accuracy:</strong> Achieved 90% accuracy, ensuring reliable and efficient malware detection.</li>
+        <li><strong>Real-Time Analysis:</strong> Built a web interface that allows users to upload files or input URLs for real-time malware detection results.</li>
+        <li><strong>Virus Total API Integration:</strong> Enhanced detection capabilities by integrating Virus Total API for cross-verification & accurate threat analysis.</li>
+      </ul>
+  
+      <h3>Technology Stack</h3>
+      <p>
+        Python, TensorFlow, Flask (backend), HTML, CSS, JavaScript (frontend).
+      </p>
+  
+      <!-- Project 2: Huffman Coding System -->
+      <h2>Huffman Coding System</h2>
+      <h3>Overview</h3>
+      <p>
+        Designed a Huffman tree to create variable-length codes for lossless compression, reducing file size while preserving data integrity.
+      </p>
+  
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Performance Optimization:</strong> Focused on optimizing both encoding and decoding processes for efficient performance & accuracy.</li>
+        <li><strong>Web Interface Integration:</strong> Developed a user-friendly interface where users can upload files, compress them, & download the compressed output.</li>
+      </ul>
+  
+      <h3>Technology Stack</h3>
+      <p>
+        Python, Data Structures & Algorithms, File Handling, Web technologies (HTML, CSS, JavaScript).
+      </p>
+  
+      <!-- Project 3: Sentix Spectrum -->
+      <h2>Sentix Spectrum</h2>
+      <h3>Overview</h3>
+      <p>
+        Implemented machine learning models to classify text data into positive, negative, or neutral sentiments using real-world datasets.
+      </p>
+  
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>High Accuracy:</strong> Achieved a 90% accuracy rate, optimizing the system for both performance & reliability.</li>
+        <li><strong>Real-Time Analysis:</strong> Built a web interface allowing users to input text and receive sentiment analysis results in real-time.</li>
+      </ul>
+  
+      <h3>Technology Stack</h3>
+      <p>
+        Python, NLP, Machine Learning, Scikit-learn, and Web technologies (HTML, CSS, JavaScript).
+      </p>
+  
+    </div>
+  </div>
+  
+ 
+    
+        
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              <a
+                href="mailto:bhaktipatil2023@gmail.com"
+                aria-label="Send an email to bhaktipatil2023@gmail.com"
+                >bhaktipatil2023@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919172318290" aria-label="Call 9172318290"
+                >9172318290</a
+              >
+            </p>
+            <div class="social-icons">
+              <div class="social-icon">
+                <a href="https://www.linkedin.com/in/bhakti-patil-b4b37a25a/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/bhaktipatil23"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.hackerrank.com/profile/bhaktipatil2023"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="HackerRank Profile"
+                >
+                  <i class="fa-brands fa-hackerrank"></i>
+                </a>
+              </div>
+            </div>
+
+            <a href="Images/mycv.pdf.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your email" required />
+              <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            
+            <span id="msg">
+              
+            </span>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ Bhakti. Made with <i class="fa-solid fa-heart"></i> by
+          easy tutorial
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
