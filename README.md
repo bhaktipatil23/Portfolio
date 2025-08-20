@@ -14,9 +14,9 @@ Technologies
 - GitHub Pages for deployment
 
 How to Run Locally
-1. Clone the repo: `git clone https://github.com/username/portfolio.git`
+1. Clone the repo: `https://github.com/bhaktipatil23/Portfolio.git`
 2. Open `index.html` in your browser
 
 Contact
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- GitHub: [Your Profile](https://github.com/username)
+- LinkedIn: [Your Profile](https://www.linkedin.com/in/bhakti-patil-b4b37a25a/)
+- GitHub: [Your Profile](https://github.com/bhaktipatil23)
