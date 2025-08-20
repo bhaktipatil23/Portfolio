@@ -13,6 +13,7 @@ Technologies
 - HTML, CSS, JavaScript
 - GitHub Pages for deployment
 
+ 
 How to Run Locally
 1. Clone the repo: `https://github.com/bhaktipatil23/Portfolio.git`
 2. Open `index.html` in your browser
